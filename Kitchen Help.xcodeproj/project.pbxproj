@@ -122,6 +122,7 @@
 				A56EFF962028B0B000B106F5 /* AppDelegate.swift */,
 				A56EFF9A2028B0B000B106F5 /* Main.storyboard */,
 				A5CC4CCA2041E83F0019BBF3 /* Property Lists */,
+				A56EFFA22028B0B000B106F5 /* Info.plist */,
 				A56EFF9D2028B0B000B106F5 /* Assets.xcassets */,
 				A56EFF9F2028B0B000B106F5 /* LaunchScreen.storyboard */,
 			);
@@ -151,7 +152,6 @@
 			children = (
 				A5CC4CC82041E4D90019BBF3 /* Recipes.plist */,
 				A5C9FC54203F3392008262CE /* GoogleService-Info.plist */,
-				A56EFFA22028B0B000B106F5 /* Info.plist */,
 			);
 			path = "Property Lists";
 			sourceTree = "<group>";
