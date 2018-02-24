@@ -17,6 +17,8 @@
 		A56EFFA12028B0B000B106F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A56EFF9F2028B0B000B106F5 /* LaunchScreen.storyboard */; };
 		A56EFFAC2028B0B000B106F5 /* Kitchen_HelpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EFFAB2028B0B000B106F5 /* Kitchen_HelpTests.swift */; };
 		A56EFFB72028B0B000B106F5 /* Kitchen_HelpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EFFB62028B0B000B106F5 /* Kitchen_HelpUITests.swift */; };
+		A5C9FC55203F3392008262CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5C9FC54203F3392008262CE /* GoogleService-Info.plist */; };
+		A5CC4CC92041E4D90019BBF3 /* Recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5CC4CC82041E4D90019BBF3 /* Recipes.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		A56EFFB22028B0B000B106F5 /* Kitchen HelpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kitchen HelpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56EFFB62028B0B000B106F5 /* Kitchen_HelpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kitchen_HelpUITests.swift; sourceTree = "<group>"; };
 		A56EFFB82028B0B000B106F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5C9FC54203F3392008262CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A5CC4CC82041E4D90019BBF3 /* Recipes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Recipes.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +118,12 @@
 		A56EFF952028B0B000B106F5 /* Kitchen Help */ = {
 			isa = PBXGroup;
 			children = (
+				A5209AB2202CAB6B0075DD0D /* Controllers */,
 				A56EFF962028B0B000B106F5 /* AppDelegate.swift */,
 				A56EFF9A2028B0B000B106F5 /* Main.storyboard */,
-				A5209AB2202CAB6B0075DD0D /* Controllers */,
+				A5CC4CCA2041E83F0019BBF3 /* Property Lists */,
 				A56EFF9D2028B0B000B106F5 /* Assets.xcassets */,
 				A56EFF9F2028B0B000B106F5 /* LaunchScreen.storyboard */,
-				A56EFFA22028B0B000B106F5 /* Info.plist */,
 			);
 			path = "Kitchen Help";
 			sourceTree = "<group>";
@@ -140,6 +144,16 @@
 				A56EFFB82028B0B000B106F5 /* Info.plist */,
 			);
 			path = "Kitchen HelpUITests";
+			sourceTree = "<group>";
+		};
+		A5CC4CCA2041E83F0019BBF3 /* Property Lists */ = {
+			isa = PBXGroup;
+			children = (
+				A5CC4CC82041E4D90019BBF3 /* Recipes.plist */,
+				A5C9FC54203F3392008262CE /* GoogleService-Info.plist */,
+				A56EFFA22028B0B000B106F5 /* Info.plist */,
+			);
+			path = "Property Lists";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,7 +263,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5CC4CC92041E4D90019BBF3 /* Recipes.plist in Resources */,
 				A56EFFA12028B0B000B106F5 /* LaunchScreen.storyboard in Resources */,
+				A5C9FC55203F3392008262CE /* GoogleService-Info.plist in Resources */,
 				A56EFF9E2028B0B000B106F5 /* Assets.xcassets in Resources */,
 				A56EFF9C2028B0B000B106F5 /* Main.storyboard in Resources */,
 			);
