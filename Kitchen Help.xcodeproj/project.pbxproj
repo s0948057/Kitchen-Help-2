@@ -19,6 +19,7 @@
 		A56EFFB72028B0B000B106F5 /* Kitchen_HelpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EFFB62028B0B000B106F5 /* Kitchen_HelpUITests.swift */; };
 		A5B169CB20446B1300A524A5 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B169CA20446B1300A524A5 /* HomeTableViewController.swift */; };
 		A5B169CD20446B3F00A524A5 /* PantryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B169CC20446B3F00A524A5 /* PantryViewController.swift */; };
+		A5B169CF20446CA800A524A5 /* Pantry.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5B169CE20446CA800A524A5 /* Pantry.plist */; };
 		A5C9FC55203F3392008262CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5C9FC54203F3392008262CE /* GoogleService-Info.plist */; };
 		A5CC4CC92041E4D90019BBF3 /* Recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5CC4CC82041E4D90019BBF3 /* Recipes.plist */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		A56EFFB82028B0B000B106F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5B169CA20446B1300A524A5 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		A5B169CC20446B3F00A524A5 /* PantryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryViewController.swift; sourceTree = "<group>"; };
+		A5B169CE20446CA800A524A5 /* Pantry.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Pantry.plist; sourceTree = "<group>"; };
 		A5C9FC54203F3392008262CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A5CC4CC82041E4D90019BBF3 /* Recipes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Recipes.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				A5CC4CC82041E4D90019BBF3 /* Recipes.plist */,
+				A5B169CE20446CA800A524A5 /* Pantry.plist */,
 				A5C9FC54203F3392008262CE /* GoogleService-Info.plist */,
 			);
 			path = "Property Lists";
@@ -271,6 +274,7 @@
 			files = (
 				A5CC4CC92041E4D90019BBF3 /* Recipes.plist in Resources */,
 				A56EFFA12028B0B000B106F5 /* LaunchScreen.storyboard in Resources */,
+				A5B169CF20446CA800A524A5 /* Pantry.plist in Resources */,
 				A5C9FC55203F3392008262CE /* GoogleService-Info.plist in Resources */,
 				A56EFF9E2028B0B000B106F5 /* Assets.xcassets in Resources */,
 				A56EFF9C2028B0B000B106F5 /* Main.storyboard in Resources */,

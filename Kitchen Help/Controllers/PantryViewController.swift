@@ -10,6 +10,10 @@ import UIKit
 
 class PantryViewController: UIViewController {
 
+    @IBOutlet weak var pantryIngredientTextField: UITextField!
+    
+    @IBOutlet weak var pantryListTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,15 +25,25 @@ class PantryViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func displayPantryIngredients() {
+        
+        /*
+         Reads Plist path
+         Displays ingredients from Plist to Text Area
+         */
     }
-    */
+ 
+    @IBAction func btnSubmitToPantry(_ sender: UIButton) {
+        
+        /* Button Submit
+         Reads text field input, saves input to Plist
+         */
+        
+        displayPantryIngredients()
+        pantryIngredientTextField.text = ""
+        
+    }
 
 }
