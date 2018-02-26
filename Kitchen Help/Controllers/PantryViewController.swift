@@ -25,7 +25,14 @@ class PantryViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    // Gets Path to Plist
+    func getPath() -> String {
+        let plistFileName = "Pantry.plist"
+        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        let documentPath = paths[0] as NSString
+        let plistPath = documentPath.appendingPathComponent(plistFileName)
+        return plistPath
+    }
 
     func displayPantryIngredients() {
         
