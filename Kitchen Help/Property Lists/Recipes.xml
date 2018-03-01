@@ -2,8 +2,18 @@
 
 <recipes>
     <dish>
-        <title>Recipe 1</title>
-        <duration>Cook Time</duration>
+        <title>Pancakes</title>
+        <duration>10 Minutes</duration>
+        <ingredients>
+            <string>Ing. 1</string>
+            <string>Ing. 2</string>
+            <string>Ing. 3</string>
+        </ingredients>
+        <directions>A list of directions</directions>
+    </dish>
+    <dish>
+        <title>Waffles</title>
+        <duration>10 Minutes</duration>
         <ingredients>
             <string>Ing. 1</string>
             <string>Ing. 2</string>

@@ -10,6 +10,7 @@ import Foundation
 
 struct Recipes {
     var title = ""
+    var image = ""
     var duration = ""
     var ingredients = ""
     var directions = ""

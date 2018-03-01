@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -247,39 +248,59 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="107" id="dSz-dw-gs1">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="107" id="dSz-dw-gs1">
                                 <rect key="frame" x="0.0" y="28" width="375" height="107"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dSz-dw-gs1" id="aQY-Kb-SQn">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="106.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="106.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recipe Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggt-wo-CRR">
-                                            <rect key="frame" x="109" y="11" width="250" height="34"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="11" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggt-wo-CRR">
+                                            <rect key="frame" x="109" y="11" width="224" height="34"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="34" id="v8Q-Uq-qfM"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cook Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VqN-d0-mjb">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="12" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cook Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VqN-d0-mjb">
                                             <rect key="frame" x="109" y="46" width="83" height="24"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="24" id="hMj-x3-Fri"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ekU-xq-ggZ">
+                                        <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ekU-xq-ggZ">
                                             <rect key="frame" x="16" y="11" width="85" height="85"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="85" id="JCx-Ba-jbF"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QnB-o2-S2W">
-                                            <rect key="frame" x="109" y="72" width="72" height="24"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QnB-o2-S2W">
+                                            <rect key="frame" x="109" y="72" width="63" height="24"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="VqN-d0-mjb" firstAttribute="top" secondItem="Ggt-wo-CRR" secondAttribute="bottom" constant="1" id="0Kb-cJ-azu"/>
+                                        <constraint firstItem="ekU-xq-ggZ" firstAttribute="top" secondItem="Ggt-wo-CRR" secondAttribute="top" id="7T5-v7-1RU"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QnB-o2-S2W" secondAttribute="trailing" constant="20" symbolic="YES" id="CDT-jo-n5p"/>
+                                        <constraint firstItem="ekU-xq-ggZ" firstAttribute="leading" secondItem="aQY-Kb-SQn" secondAttribute="leadingMargin" id="Hyc-P9-G0p"/>
+                                        <constraint firstItem="ekU-xq-ggZ" firstAttribute="bottom" secondItem="QnB-o2-S2W" secondAttribute="bottom" id="LWf-bE-gZz"/>
+                                        <constraint firstItem="Ggt-wo-CRR" firstAttribute="trailing" secondItem="aQY-Kb-SQn" secondAttribute="trailingMargin" id="Lxp-DV-fbw"/>
+                                        <constraint firstItem="VqN-d0-mjb" firstAttribute="leading" secondItem="QnB-o2-S2W" secondAttribute="leading" id="Pq6-Ls-Z0L"/>
+                                        <constraint firstItem="ekU-xq-ggZ" firstAttribute="bottom" secondItem="aQY-Kb-SQn" secondAttribute="bottomMargin" id="hPm-an-eMJ"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="VqN-d0-mjb" secondAttribute="trailing" constant="20" symbolic="YES" id="jFy-GY-MSd"/>
+                                        <constraint firstItem="Ggt-wo-CRR" firstAttribute="leading" secondItem="ekU-xq-ggZ" secondAttribute="trailing" constant="8" symbolic="YES" id="jo8-1z-oeo"/>
+                                        <constraint firstItem="QnB-o2-S2W" firstAttribute="top" secondItem="VqN-d0-mjb" secondAttribute="bottom" constant="2" id="ofF-cD-Gie"/>
+                                        <constraint firstItem="Ggt-wo-CRR" firstAttribute="leading" secondItem="VqN-d0-mjb" secondAttribute="leading" id="uaQ-Bp-AuU"/>
+                                        <constraint firstItem="ekU-xq-ggZ" firstAttribute="top" secondItem="aQY-Kb-SQn" secondAttribute="topMargin" id="zG8-ug-M5G"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="nXH-iS-NCW" kind="show" id="a4O-Tq-8Bq"/>
