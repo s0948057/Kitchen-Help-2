@@ -22,6 +22,8 @@
 		A5B169CF20446CA800A524A5 /* Pantry.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5B169CE20446CA800A524A5 /* Pantry.plist */; };
 		A5C9FC55203F3392008262CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5C9FC54203F3392008262CE /* GoogleService-Info.plist */; };
 		A5CC4CC92041E4D90019BBF3 /* Recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5CC4CC82041E4D90019BBF3 /* Recipes.plist */; };
+		A5E716712048582700D9FEF6 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E716702048582700D9FEF6 /* XMLParser.swift */; };
+		A5E71673204859F300D9FEF6 /* Recipes.xml in Resources */ = {isa = PBXBuildFile; fileRef = A5E71672204859F300D9FEF6 /* Recipes.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		A5B169CE20446CA800A524A5 /* Pantry.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Pantry.plist; sourceTree = "<group>"; };
 		A5C9FC54203F3392008262CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A5CC4CC82041E4D90019BBF3 /* Recipes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Recipes.plist; sourceTree = "<group>"; };
+		A5E716702048582700D9FEF6 /* XMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
+		A5E71672204859F300D9FEF6 /* Recipes.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Recipes.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,7 @@
 		A56EFF952028B0B000B106F5 /* Kitchen Help */ = {
 			isa = PBXGroup;
 			children = (
+				A5E7166F2048560D00D9FEF6 /* Model */,
 				A5CC4CCA2041E83F0019BBF3 /* Property Lists */,
 				A5209AB2202CAB6B0075DD0D /* Controllers */,
 				A56EFF962028B0B000B106F5 /* AppDelegate.swift */,
@@ -161,8 +166,17 @@
 				A5CC4CC82041E4D90019BBF3 /* Recipes.plist */,
 				A5B169CE20446CA800A524A5 /* Pantry.plist */,
 				A5C9FC54203F3392008262CE /* GoogleService-Info.plist */,
+				A5E71672204859F300D9FEF6 /* Recipes.xml */,
 			);
 			path = "Property Lists";
+			sourceTree = "<group>";
+		};
+		A5E7166F2048560D00D9FEF6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5E716702048582700D9FEF6 /* XMLParser.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5CC4CC92041E4D90019BBF3 /* Recipes.plist in Resources */,
+				A5E71673204859F300D9FEF6 /* Recipes.xml in Resources */,
 				A56EFFA12028B0B000B106F5 /* LaunchScreen.storyboard in Resources */,
 				A5B169CF20446CA800A524A5 /* Pantry.plist in Resources */,
 				A5C9FC55203F3392008262CE /* GoogleService-Info.plist in Resources */,
@@ -302,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E716712048582700D9FEF6 /* XMLParser.swift in Sources */,
 				A5B169CB20446B1300A524A5 /* HomeTableViewController.swift in Sources */,
 				A5209AB1202CAB4C0075DD0D /* RecipeTableViewController.swift in Sources */,
 				A56EFF992028B0B000B106F5 /* LoginViewController.swift in Sources */,

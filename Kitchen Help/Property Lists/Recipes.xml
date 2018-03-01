@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<recipes>
+    <dish>
+        <title>Recipe 1</title>
+        <duration>Cook Time</duration>
+        <ingredients>
+            <string>Ing. 1</string>
+            <string>Ing. 2</string>
+            <string>Ing. 3</string>
+        </ingredients>
+        <directions>A list of directions</directions>
+    </dish>
+</recipes>
+

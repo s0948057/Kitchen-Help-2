@@ -8,7 +8,17 @@
    Copyright (c) 2018 Miranda Richardson. All rights reserved.
 -->
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+
+ <dict>
+ <key>Recipe</key>
+ <string>Title 1</string>
+ <key>Ingredients</key>
+ <array>
+ <string>Ing. 1</string>
+ <string>Ing. 2</string>
+ <string>Ing. 3</string>
+ </array>
+ <key>Directions</key>
+ <string>A list of directions</string>
+ </dict>
 </plist>

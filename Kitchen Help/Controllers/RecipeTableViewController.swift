@@ -8,88 +8,114 @@
 
 import UIKit
 
-class RecipeTableViewController: UITableViewController {
+class RecipeTableViewController: UITableViewController, XMLParserDelegate {
 
+    @IBOutlet var myTableView: UITableView!
+    
+    var tableViewDataSource = [Recipes]()
+    
+    var thisName = ""
+    var recipeTitle = ""
+    var recipeDuration = ""
+    var recipeIngredients = ""
+    var recipeDirections = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        myTableView.dataSource = self
+        myTableView.delegate = self
+        
+        if let path =  Bundle.main.url(forResource: "Recipes", withExtension: "xml") {
+            if let parser = XMLParser(contentsOf: path) {
+                parser.delegate = self
+                parser.parse()
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
 
-    // MARK: - Table view data source
-
+    // Table View Delegates
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+
         return 0
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+
+        return tableViewDataSource.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        let titleLabel = cell.viewWithTag(11) as! UILabel
+        let ingredientsLabel = cell.viewWithTag(12) as! UILabel
+        let descriptionLabel = cell.viewWithTag(13) as! UILabel
+        
         return cell
     }
-    */
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    
+    // XML Parser
+    
+    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
+        thisName = elementName
+        
+        if elementName == "dish" {
+            var recipeTitle = ""
+            var recipeDuration = ""
+            var recipeIngredients = ""
+            var recipeDirections = ""
+        }
+        
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
+    
+    func parser(_ parser: XMLParser, foundCharacters string: String) {
+        let data = string.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+        
+        if data.count != 0 {
+            switch thisName
+            {
+                case "title": recipeTitle = data
+                case "duration": recipeDuration = data
+                default:
+                    break
+            }
+        }
     }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
+    
+    func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+        if elementName == "dish" {
+            var recipe = Recipes()
+            recipe.title = recipeTitle
+            recipe.duration = recipeDuration
+            
+            print(recipe)
+            tableViewDataSource.append(recipe)
+            
+        }
     }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 }
