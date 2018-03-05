@@ -6,10 +6,7 @@
         <title> Pancakes </title>
         <duration> 15 minutes </duration>
         <calories> 350 calories </calories>
-        <ingredients>
-            <item> ing. 1 </item>
-            <item> ing. 2 </item>
-        </ingredients>
+        <ingredients> Example Ingredients  </ingredients>
         <image> image url </image>
         <description>
             <step> step 1 </step>

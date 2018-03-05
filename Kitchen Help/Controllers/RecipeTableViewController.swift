@@ -19,7 +19,7 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
     var recipeDuration = ""
     var recipeCalories = ""
     var recipeIngredients = ""
-    var recipeDirections = ""
+    var recipeDescription = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +68,8 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
         // Information to be passed to ResultsViewController
         
         resultsVC.getTitle = tableViewDataSource[indexPath.row].title
+        resultsVC.getDuration = tableViewDataSource[indexPath.row].duration
+        resultsVC.getIngredients = tableViewDataSource[indexPath.row].ingredients
         
         
         
@@ -89,6 +91,8 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
             var recipeTitle = ""
             var recipeDuration = ""
             var recipeCalories = ""
+            var recipeIngredients = ""
+            var recipeDirections = ""
         }
     }
     
@@ -101,6 +105,8 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
                 case "title": recipeTitle = data
                 case "duration": recipeDuration = data
                 case "calories": recipeCalories = data
+                case "ingredients": recipeIngredients = data
+                case "description": recipeDescription = data
                 default:
                     break
             }
@@ -113,6 +119,8 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
             recipe.title = recipeTitle
             recipe.duration = recipeDuration
             recipe.calories = recipeCalories
+            recipe.ingredients = recipeIngredients
+            recipe.description = recipeDescription
             
             print(recipe)
             tableViewDataSource.append(recipe)

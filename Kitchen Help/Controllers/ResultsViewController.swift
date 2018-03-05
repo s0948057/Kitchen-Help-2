@@ -12,6 +12,7 @@ class ResultsViewController: UIViewController {
     
     var getTitle = String()
     var getDuration = String()
+    var getIngredients = String()
     
     @IBOutlet weak var recipeDisplay: UILabel!
     @IBOutlet weak var durationDisplay: UILabel!
@@ -22,6 +23,7 @@ class ResultsViewController: UIViewController {
         
         recipeDisplay.text! = getTitle
         durationDisplay.text! = getDuration
+        ingredientsDisplay.text! = getIngredients
         
         // Do any additional setup after loading the view.
     }
