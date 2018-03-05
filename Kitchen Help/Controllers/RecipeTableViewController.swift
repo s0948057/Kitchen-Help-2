@@ -17,8 +17,7 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
     var thisName = ""
     var recipeTitle = ""
     var recipeDuration = ""
-    var recipeIngredients = ""
-    var recipeDirections = ""
+    var recipeCalories = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,13 +50,14 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
         
         let titleLabel = cell.viewWithTag(11) as! UILabel
         let cookTimeLabel = cell.viewWithTag(12) as! UILabel
+        let caloriesLabel = cell.viewWithTag(13) as! UILabel
         
         titleLabel.text = tableViewDataSource[indexPath.row].title
         cookTimeLabel.text = tableViewDataSource[indexPath.row].duration
+        caloriesLabel.text = tableViewDataSource[indexPath.row].calories
         
         return cell
     }
-
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
@@ -71,6 +71,7 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
         if elementName == "dish" {
             var recipeTitle = ""
             var recipeDuration = ""
+            var recipeCalories = ""
         }
         
     }
@@ -83,6 +84,7 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
             {
                 case "title": recipeTitle = data
                 case "duration": recipeDuration = data
+                case "calories": recipeCalories = data
                 default:
                     break
             }
@@ -94,11 +96,10 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
             var recipe = Recipes()
             recipe.title = recipeTitle
             recipe.duration = recipeDuration
+            recipe.calories = recipeCalories
             
             print(recipe)
             tableViewDataSource.append(recipe)
-            
         }
     }
-
 }

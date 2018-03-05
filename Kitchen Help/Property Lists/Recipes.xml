@@ -2,24 +2,35 @@
 
 <recipes>
     <dish>
-        <title>Pancakes</title>
-        <duration>10 Minutes</duration>
+        <type> breakfast </type>
+        <title> Pancakes </title>
+        <duration> 15 minutes </duration>
+        <calories> 350 calories </calories>
         <ingredients>
-            <string>Ing. 1</string>
-            <string>Ing. 2</string>
-            <string>Ing. 3</string>
+            <item> ing. 1 </item>
+            <item> ing. 2 </item>
         </ingredients>
-        <directions>A list of directions</directions>
+        <image> image url </image>
+        <description>
+            <step> step 1 </step>
+            <step> step 2 </step>
+        </description>
     </dish>
     <dish>
-        <title>Waffles</title>
-        <duration>10 Minutes</duration>
+        <type> breakfast </type>
+        <title> Waffles </title>
+        <duration> 10 minutes </duration>
+        <calories> 300 calories </calories>
         <ingredients>
-            <string>Ing. 1</string>
-            <string>Ing. 2</string>
-            <string>Ing. 3</string>
+            <item> ing. 1 </item>
+            <item> ing. 2 </item>
         </ingredients>
-        <directions>A list of directions</directions>
+        <image> image url </image>
+        <description>
+            <step> step 1 </step>
+            <step> step 2 </step>
+        </description>
     </dish>
+
 </recipes>
 

@@ -18,7 +18,6 @@
 		A56EFFAC2028B0B000B106F5 /* Kitchen_HelpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EFFAB2028B0B000B106F5 /* Kitchen_HelpTests.swift */; };
 		A56EFFB72028B0B000B106F5 /* Kitchen_HelpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EFFB62028B0B000B106F5 /* Kitchen_HelpUITests.swift */; };
 		A5B169CB20446B1300A524A5 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B169CA20446B1300A524A5 /* HomeTableViewController.swift */; };
-		A5B169CD20446B3F00A524A5 /* PantryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B169CC20446B3F00A524A5 /* PantryViewController.swift */; };
 		A5B169CF20446CA800A524A5 /* Pantry.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5B169CE20446CA800A524A5 /* Pantry.plist */; };
 		A5C9FC55203F3392008262CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5C9FC54203F3392008262CE /* GoogleService-Info.plist */; };
 		A5CC4CC92041E4D90019BBF3 /* Recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5CC4CC82041E4D90019BBF3 /* Recipes.plist */; };
@@ -61,7 +60,6 @@
 		A56EFFB62028B0B000B106F5 /* Kitchen_HelpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kitchen_HelpUITests.swift; sourceTree = "<group>"; };
 		A56EFFB82028B0B000B106F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5B169CA20446B1300A524A5 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
-		A5B169CC20446B3F00A524A5 /* PantryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryViewController.swift; sourceTree = "<group>"; };
 		A5B169CE20446CA800A524A5 /* Pantry.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Pantry.plist; sourceTree = "<group>"; };
 		A5C9FC54203F3392008262CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A5CC4CC82041E4D90019BBF3 /* Recipes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Recipes.plist; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 				A5209AB3202CAD660075DD0D /* SearchPageViewController.swift */,
 				A5209AB0202CAB4C0075DD0D /* RecipeTableViewController.swift */,
 				A5209AB5202CADDE0075DD0D /* ResultsViewController.swift */,
-				A5B169CC20446B3F00A524A5 /* PantryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -323,7 +320,6 @@
 				A56EFF992028B0B000B106F5 /* LoginViewController.swift in Sources */,
 				A56EFF972028B0B000B106F5 /* AppDelegate.swift in Sources */,
 				A5209AB6202CADDE0075DD0D /* ResultsViewController.swift in Sources */,
-				A5B169CD20446B3F00A524A5 /* PantryViewController.swift in Sources */,
 				A5209AB4202CAD660075DD0D /* SearchPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
