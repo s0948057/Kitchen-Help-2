@@ -6,7 +6,7 @@
         <title> Pancakes </title>
         <duration> 15 minutes </duration>
         <calories> 350 calories </calories>
-        <ingredients> Example Ingredients  </ingredients>
+        <ingredients> Example Ingredients (No array) </ingredients>
         <image> image url </image>
         <description>
             <step> step 1 </step>
@@ -18,10 +18,7 @@
         <title> Waffles </title>
         <duration> 10 minutes </duration>
         <calories> 300 calories </calories>
-        <ingredients>
-            <item> ing. 1 </item>
-            <item> ing. 2 </item>
-        </ingredients>
+        <ingredients> Example Ingredients 2 (No array) </ingredients>
         <image> image url </image>
         <description>
             <step> step 1 </step>
