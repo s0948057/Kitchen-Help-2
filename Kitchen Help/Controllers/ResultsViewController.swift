@@ -8,10 +8,20 @@
 
 import UIKit
 
-class ResultsViewController: UIViewController, XMLParserDelegate {
+class ResultsViewController: UIViewController {
+    
+    var getTitle = String()
+    var getDuration = String()
+    
+    @IBOutlet weak var recipeDisplay: UILabel!
+    @IBOutlet weak var durationDisplay: UILabel!
+    @IBOutlet weak var ingredientsDisplay: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        recipeDisplay.text! = getTitle
+        durationDisplay.text! = getDuration
         
         // Do any additional setup after loading the view.
     }

@@ -18,6 +18,8 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
     var recipeTitle = ""
     var recipeDuration = ""
     var recipeCalories = ""
+    var recipeIngredients = ""
+    var recipeDirections = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,7 +60,22 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
         
         return cell
     }
-
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let Storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let resultsVC = Storyboard.instantiateViewController(withIdentifier: "ResultsViewController") as! ResultsViewController
+        
+        // Information to be passed to ResultsViewController
+        
+        resultsVC.getTitle = tableViewDataSource[indexPath.row].title
+        
+        
+        
+        // Push to next view
+        self.navigationController?.pushViewController(resultsVC, animated: true)
+        
+    }
+    
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
@@ -73,7 +90,6 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
             var recipeDuration = ""
             var recipeCalories = ""
         }
-        
     }
     
     func parser(_ parser: XMLParser, foundCharacters string: String) {

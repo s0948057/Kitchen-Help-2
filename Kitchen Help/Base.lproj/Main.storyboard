@@ -278,9 +278,6 @@
                                         <constraint firstItem="ekU-xq-ggZ" firstAttribute="top" secondItem="aQY-Kb-SQn" secondAttribute="topMargin" id="zG8-ug-M5G"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="nXH-iS-NCW" kind="show" id="a4O-Tq-8Bq"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -300,7 +297,7 @@
         <!--Results View Controller-->
         <scene sceneID="iBl-oe-CFD">
             <objects>
-                <viewController id="nXH-iS-NCW" customClass="ResultsViewController" customModule="Kitchen_Help" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nXH-iS-NCW" customClass="ResultsViewController" customModule="Kitchen_Help" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AzQ-vs-GS4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -336,7 +333,9 @@
                         <viewLayoutGuide key="safeArea" id="zGO-qf-VbX"/>
                     </view>
                     <connections>
-                        <outlet property="myResultsView" destination="AzQ-vs-GS4" id="oos-0x-Y3O"/>
+                        <outlet property="durationDisplay" destination="zh0-2N-INT" id="puP-SQ-sRp"/>
+                        <outlet property="ingredientsDisplay" destination="LGL-tc-HkP" id="XOe-3M-lCA"/>
+                        <outlet property="recipeDisplay" destination="34C-Nq-nNn" id="V9U-Ob-5aQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yOW-hO-bIq" userLabel="First Responder" sceneMemberID="firstResponder"/>
