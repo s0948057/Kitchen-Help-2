@@ -25,6 +25,7 @@
 		A5E716712048582700D9FEF6 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E716702048582700D9FEF6 /* XMLParser.swift */; };
 		A5E71673204859F300D9FEF6 /* Recipes.xml in Resources */ = {isa = PBXBuildFile; fileRef = A5E71672204859F300D9FEF6 /* Recipes.xml */; };
 		C20F25C84670957EFC61D8A1 /* Pods_Kitchen_Help.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CC50D34C418B23DD30A6D0 /* Pods_Kitchen_Help.framework */; };
+		C31FD33B2060106A0086733C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C31FD33A206010690086733C /* GoogleService-Info.plist */; };
 		FA0C6B579E0E5F864C251AF8 /* Pods_Kitchen_HelpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96883284F2341649CE18581A /* Pods_Kitchen_HelpUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		A5E716702048582700D9FEF6 /* XMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
 		A5E71672204859F300D9FEF6 /* Recipes.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Recipes.xml; sourceTree = "<group>"; };
 		AFFB44069DA38B6BFCF83267 /* Pods-Kitchen Help.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen Help.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen Help/Pods-Kitchen Help.debug.xcconfig"; sourceTree = "<group>"; };
+		C31FD33A206010690086733C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CB2C8B75A716A2AF8C18783D /* Pods-Kitchen HelpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen HelpUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen HelpUITests/Pods-Kitchen HelpUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D25F54C6EE38DA9EA412D45C /* Pods-Kitchen HelpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen HelpTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen HelpTests/Pods-Kitchen HelpTests.release.xcconfig"; sourceTree = "<group>"; };
 		F6D6D8FAACE508D7C4CDBF67 /* Pods-Kitchen Help.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen Help.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen Help/Pods-Kitchen Help.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		A56EFF8A2028B0B000B106F5 = {
 			isa = PBXGroup;
 			children = (
+				C31FD33A206010690086733C /* GoogleService-Info.plist */,
 				A56EFF952028B0B000B106F5 /* Kitchen Help */,
 				A56EFFAA2028B0B000B106F5 /* Kitchen HelpTests */,
 				A56EFFB52028B0B000B106F5 /* Kitchen HelpUITests */,
@@ -333,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5CC4CC92041E4D90019BBF3 /* Recipes.plist in Resources */,
+				C31FD33B2060106A0086733C /* GoogleService-Info.plist in Resources */,
 				A5E71673204859F300D9FEF6 /* Recipes.xml in Resources */,
 				A56EFFA12028B0B000B106F5 /* LaunchScreen.storyboard in Resources */,
 				A5B169CF20446CA800A524A5 /* Pantry.plist in Resources */,
@@ -396,11 +400,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Kitchen Help/Pods-Kitchen Help-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -451,9 +459,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Kitchen Help/Pods-Kitchen Help-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
