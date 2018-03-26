@@ -10,6 +10,8 @@ target 'Kitchen Help' do
 
   # Pods for Kitchen Help
 
+  pod 'SWXMLHash', '~> 4.0.0'
+
   target 'Kitchen HelpTests' do
     inherit! :search_paths
     # Pods for testing
