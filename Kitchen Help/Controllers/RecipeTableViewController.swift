@@ -14,25 +14,21 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
     
     var tableViewDataSource = [Recipes]()
     
-    var thisName = ""
-    var recipeTitle = ""
-    var recipeDuration = ""
-    var recipeCalories = ""
-    var recipeIngredients = ""
-    var recipeDescription = ""
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        myTableView.dataSource = self
-        myTableView.delegate = self
+        guard let path = Bundle.main.path(forResource: "recipes", ofType: "json") else { return }
+        let url = URL(fileURLWithPath: path)
         
-        if let path =  Bundle.main.url(forResource: "Recipes", withExtension: "xml") {
-            if let parser = XMLParser(contentsOf: path) {
-                parser.delegate = self
-                parser.parse()
-            }
+        do {
+            let data = try Data(contentsOf: url)
+            let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
+            print(json)
+        } catch {
+            print(error)
         }
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,36 +39,13 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
     // Table View Delegates
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
         return tableViewDataSource.count
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
-        let titleLabel = cell.viewWithTag(11) as! UILabel
-        let cookTimeLabel = cell.viewWithTag(12) as! UILabel
-        let caloriesLabel = cell.viewWithTag(13) as! UILabel
-        
-        titleLabel.text = tableViewDataSource[indexPath.row].title
-        cookTimeLabel.text = tableViewDataSource[indexPath.row].duration
-        caloriesLabel.text = tableViewDataSource[indexPath.row].calories
-        
-        return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let Storyboard = UIStoryboard(name: "Main", bundle: nil)
         let resultsVC = Storyboard.instantiateViewController(withIdentifier: "ResultsViewController") as! ResultsViewController
-        
-        // Information to be passed to ResultsViewController
-        
-        resultsVC.getTitle = tableViewDataSource[indexPath.row].title
-        resultsVC.getDuration = tableViewDataSource[indexPath.row].duration
-        resultsVC.getIngredients = tableViewDataSource[indexPath.row].ingredients
-        
-        
-        
+
         // Push to next view
         self.navigationController?.pushViewController(resultsVC, animated: true)
         
@@ -82,48 +55,6 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
         return 100
     }
     
-    // XML Parser
+ 
     
-    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
-        thisName = elementName
-        
-        if elementName == "dish" {
-            var recipeTitle = ""
-            var recipeDuration = ""
-            var recipeCalories = ""
-            var recipeIngredients = ""
-            var recipeDirections = ""
-        }
-    }
-    
-    func parser(_ parser: XMLParser, foundCharacters string: String) {
-        let data = string.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
-        
-        if data.count != 0 {
-            switch thisName
-            {
-                case "title": recipeTitle = data
-                case "duration": recipeDuration = data
-                case "calories": recipeCalories = data
-                case "ingredients": recipeIngredients = data
-                case "description": recipeDescription = data
-                default:
-                    break
-            }
-        }
-    }
-    
-    func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
-        if elementName == "dish" {
-            var recipe = Recipes()
-            recipe.title = recipeTitle
-            recipe.duration = recipeDuration
-            recipe.calories = recipeCalories
-            recipe.ingredients = recipeIngredients
-            recipe.description = recipeDescription
-            
-            print(recipe)
-            tableViewDataSource.append(recipe)
-        }
-    }
 }

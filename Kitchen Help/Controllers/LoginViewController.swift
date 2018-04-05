@@ -11,7 +11,7 @@ import Firebase
 import GoogleSignIn
 import FirebaseAuth
 
-class LoginViewController: UITableViewController,  GIDSignInUIDelegate {
+class LoginViewController: UIViewController,  GIDSignInUIDelegate {
 
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -23,6 +23,10 @@ class LoginViewController: UITableViewController,  GIDSignInUIDelegate {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBAction func loginAction(_ sender: Any) {
         if self.emailTextField.text == "" || self.passwordTextField.text == "" {
+            
+            // If Info is in firebase, login
+            // otherwise create new account
+            
             
             //Alert to tell the user that there was an error because they didn't fill anything in the textfields because they didn't fill anything in
             
