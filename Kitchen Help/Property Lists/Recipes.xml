@@ -3,28 +3,155 @@
 <recipes>
     <dish>
         <type> breakfast </type>
-        <title> Pancakes </title>
+        <title> Whole Grain Waffles</title>
         <duration> 15 minutes </duration>
         <calories> 350 calories </calories>
-        <ingredients> Example Ingredients (No array) </ingredients>
-        <image> image url </image>
+        <ingredients>
+            2 eggs, 1 3/4 cups skim milk, 1/4 cup canola oil, 1/4 cup unsweetened applesauce, 1 teaspoon vanilla extract, 1 cup whole wheat pastry flour, 1/2 cup flax seed meal, 1/4 cup wheat germ, 1/4 cup all-purpose flour, 4 teaspoons baking powder, 1 tablespoon sugar, 1/4 teaspoon salt,
+        </ingredients>
+        <image> https://images.media-allrecipes.com/userphotos/720x405/3256311.jpg </image>
         <description>
-            <step> step 1 </step>
-            <step> step 2 </step>
+            1. In a large bowl, whisk together the eggs, milk, oil, applesauce, and vanilla. Beat in whole wheat pastry flour, flaxseed meal, wheat germ, all-purpose flour, baking powder, sugar, and salt until batter is smooth.+2. Preheat a waffle iron, and coat with cooking spray. Pour batter into waffle iron in batches, and cook until crisp and golden brown.
         </description>
     </dish>
     <dish>
         <type> breakfast </type>
-        <title> Waffles </title>
-        <duration> 10 minutes </duration>
-        <calories> 300 calories </calories>
-        <ingredients> Example Ingredients 2 (No array) </ingredients>
-        <image> image url </image>
+        <title> Whole Wheat Sweet Potato Muffins </title>
+        <duration> 40 minutes </duration>
+        <calories> 350 calories </calories>
+        <ingredients>
+              1 sweet potato, 2 cups whole wheat flour, 1 teaspoon baking soda, 1/2 teaspoon salt, 1 teaspoon ground cinnamon, 1/4 teaspoon ground nutmeg, 1/4 teaspoon ground ginger, 1/4 teaspoon ground cloves, 1/4 cup vegetable oil, 2 eggs lightly beaten, 1 teaspoon vanilla extract, 1 cup honey, 1 (6 ounce) container vanilla yogurt, 1/2 cup oatmeal, 1/2 cup brown sugar, 1/2 cup almonds, 1 teaspoon cinnamon,
+        </ingredients>
+        <image> https://images.media-allrecipes.com/userphotos/720x405/2109085.jpg
+        </image>
         <description>
-            <step> step 1 </step>
-            <step> step 2 </step>
+              1. Preheat an oven to 400 degrees F (200 degrees C). Grease 16 muffin cups, or line with paper muffin liners; set aside. Prick sweet potato several times with a fork and place onto a baking sheet.+2. Bake the sweet potato in the preheated oven until easily pierced with a fork, about 40 minutes. When the potato is cool enough to handle, peel and mash.+3. Reduce the oven temperature to 350 degrees F (175 degrees C).+4. Whisk together the flour, baking soda, salt, the 1 teaspoon cinnamon, nutmeg, ginger, and cloves. Stir in the vegetable oil, eggs, vanilla, honey, yogurt, and mashed sweet potato, just until all ingredients are moistened. Spoon batter evenly into prepared muffin cups.+5. Blend together the oatmeal, brown sugar, almonds, and the remaining 1 teaspoon cinnamon in a food processor or blender. Sprinkle topping over unbaked muffins.+6. Bake muffins in the preheated oven until golden and the tops spring back when lightly pressed, 12 to 15 minutes.
+        </description>
+    </dish>
+    <dish>
+        <type> breakfast </type>
+        <title> Maple Apple Turkey Sausage </title>
+        <duration> 16 minutes </duration>
+        <calories> 350 calories </calories>
+        <ingredients>
+              1 pound lean ground turkey, 1 small apple peeled and finely chopped, 1 tablespoon pure maple syrup, 3/4 teaspoon salt, 1/2 teaspoon dried sage, 1/4 teaspoon garlic powder, 1/4 teaspoon ground black pepper, 1/4 teaspoon dried marjoram, 1/8 teaspoon ground cinnamon, 1 dash ground cloves, 1 tablespoon olive oil,
+        </ingredients>
+        <image> https://images.media-allrecipes.com/userphotos/560x315/4553597.jpg
+        </image>
+        <description>
+              1. Combine turkey, apple, maple syrup, salt, sage, garlic powder, black pepper, marjoram, cinnamon, and cloves in a bowl; mix well. Form into 10 small patties.+2. Heat olive oil in a skillet over medium heat. Fry patties until no longer pink in the center and the juices run clear, 3 to 4 minutes per side. An instant-read thermometer inserted into the center should read at least 165 degrees F (74 degrees C).
+        </description>
+    </dish>
+    <dish>
+        <type> breakfast </type>
+        <title> Healthy Blueberry Breakfast Smoothie </title>
+        <duration> 15minutes </duration>
+        <calories> 350 calories </calories>
+        <ingredients>
+              1 pound lean ground turkey, 1 cup fresh blueberries, 1/2 cup Greek yogurt, 1/4 cup orange juice, 1 tablespoon white sugar or to taste, 1/4 teaspoon vanilla extract, 1 pinch ground cinnamon or to taste, 3 ice cubes
+        </ingredients>
+        <image> https://images.media-allrecipes.com/userphotos/560x315/2271701.jpg </image>
+        <description>
+          Blend blueberries, yogurt, orange juice, sugar, vanilla extract, and cinnamon together in a blender on low speed for 30 seconds; increase speed to high and blend until smooth, about 2 minutes. Add ice and blend on high until smooth, about 1 minute more. </description>
+    </dish>
+    <dish>
+        <type> breakfast </type>
+        <title> Apple Raisin French Toast Strata </title>
+        <duration> 65 minutes </duration>
+        <calories> 350 calories </calories>
+        <ingredients>
+              1 (1 pound) loaf cinnamon raisin bread (cubed), 1 (8 ounce) package cream cheese diced, 1 cup diced peeled apples 8 eggs, 2 1/2 cups half-and-half cream, 6 tablespoons butter melted, 1/4 cup maple syrup
+        </ingredients>
+        <image> https://images.media-allrecipes.com/userphotos/560x315/1080868.jpg </image>
+        <description>
+              1. Coat a 9x13 inch baking dish with cooking spray. Arrange 1/2 of the cubed raisin bread in the bottom of the dish. Sprinkle the cream cheese evenly over the bread, and top with the apples. If you like extra raisins, add them now. Top with remaining bread.+2. In a large bowl, beat the eggs with the cream, butter, and maple syrup. Pour over the bread mixture. Cover with plastic wrap, and press down so that all bread pieces are soaked. Refrigerate at least 2 hours.+3. Preheat oven to 325 degrees F (165 degrees C).+4. Bake 45 minutes in the preheated oven. Let stand for 10 minutes before serving.
+        </description>
+    </dish>
+    <dish>
+        <type> breakfast </type>
+        <title> Microwave Mexican Omelet </title>
+        <duration> 3 minutes </duration>
+        <calories> 400 calories </calories>
+        <ingredients>
+           2 eggs, 2 tbsp water, 1 tsp water, 8 eggs, 1/2 cup mexican cheese blend, 1/2 cup chunky salsa,
+        </ingredients>
+        <image> https://x9wsr1khhgk5pxnq1f1r8kye-wpengine.netdna-ssl.com/wp-content/uploads/microwave-mexican-omelet-930x550.jpg </image>
+        <description>
+              1.Beat eggs and water in small bowl until blended.+2. Microwave butter in 9-inch glass pie plate on high until melted, about 15 seconds. Tilt plate to boat bottom evenly. Pour egg mixture into hot pie plate. Cover tightly with plastic wrap, leaving a small vent.+3. Microwave on high 1 to 2 minutes. DO NOT STIR.+4. When top is thickened and no visible liquid egg remains, season with salt and pepper if desired. Place half of the cheese on one half of the omlet. Fold omelet in half with turner, sprinkle with remaining cheese melts. Slide from pie plate onto serving plate. Serve immediately with salsa.
+        </description>
+    </dish>
+    
+    <dish>
+        <type> Lunch </type>
+        <title> Baked potato poblanos and sour cream </title>
+        <duration> 65 minutes </duration>
+        <calories> 350 calories </calories>
+        <ingredients>
+           4 russet potatoes (about 2 1/2 pounds), Kosher salt and ground pepper, 1/4 cup sour cream, 2 teaspoons lime juice, 3 tablespoons extra-virgin olive oil, plus more for brushing, 2 poblano peppers, stemmed and seeded, 1/2 cup low-sodium chicken broth or water, 2 teaspoons Worcestershire sauce, Cilantro leaves for serving,
+        </ingredients>
+        <image> rajas-sour-cream-baked-potato-0318-103242164_0_horiz.jpg
+        </image>
+        <description>
+              1. Preheat oven to 400 degrees. Thoroughly wash and dry potatoes. Prick each in a few spots with a fork. Brush with oil and season with salt.+2. Place potatoes directly on rack and bake until soft and easily pierced with the tip of a knife, 1 hour to 1 hour, 15 minutes, depending on size. Meanwhile, halve and thinly slice peppers and onion. Heat oil in a large skillet over medium-high. Add peppers and onion, season with salt, and cook, stirring occasionally, until tender and golden in places, 12 to 15 minutes. Stir in broth and sour cream. Boil until mixture thickens slightly, about 2 minutes. Stir in Worcestershire and lime juice.+3. Remove potatoes from oven. Grab a hot potato with a clean kitchen towel and bang it down firmly on the counter once to fluff up the flesh. Repeat with remaining potatoes. Cut open, season generously with salt and pepper, and top with pepper mixture, more sour cream, and cilantro.
+        </description>
+    </dish>
+    <dish>
+        <type> Lunch </type>
+        <title> Loaded Baked Sweet Potatoes </title>
+        <duration> 65 minutes </duration>
+        <calories> 350 calories </calories>
+        <ingredients>
+           4 medium sweet potatoes scrubbed, Kosher salt, Fresh ground pepper, 1 can cannellini beans drained and rinsed, Flaky salt (optional), 3 tablespoons extra-virgin olive oil, 8 ounces broccoli rabe, tough ends trimmed, 1/4 cup sliced pepperoncini, Brine for drizzling
+        </ingredients>
+        <image> https://assets.marthastewart.com/styles/wmax-750/d42/baked-sweet-potato-card_199_bg_6138982_key/baked-sweet-potato-card_199_bg_6138982_key_horiz.jpg?itok=7gCRxmtt
+        </image> 
+        <description>
+              1. Preheat oven to 400 degrees with racks in upper and lower thirds. Prick potatoes all over with a fork. Rub with 2 tablespoons oil; season with kosher salt. Place directly on top rack, with a parchment-lined rimmed baking sheet on rack below. Roast 45 minutes.+2. Meanwhile, toss broccoli rabe with remaining 1 tablespoon oil; season with kosher salt and pepper. Carefully remove parchment from lower baking sheet; add broccoli rabe in a single layer. Roast, tossing once, until tender and bright green and potatoes are soft and oozing, 15 minutes. Transfer vegetables to a cutting board; let cool slightly, then chop broccoli rabe into bite-size pieces. Split sweet potatoes open; mash lightly with a fork. Top with broccoli rabe, beans, and pepperoncini. Serve, drizzled with oil and brine and sprinkled with flaky salt.
+        </description> 
+    </dish>
+    <dish>
+        <type> Lunch </type>
+        <title> Easy Roasted Salmon with Brussels </title>
+        <duration> 65 minutes </duration>
+        <calories> 350 calories </calories>
+        <ingredients>
+           1 pound Brussels sprouts, Coarse salt and ground pepper, 2 tablespoons olive oil, 4 skinless salmon fillets (about 1 1/2 pounds),
+        </ingredients>
+        <image> https://assets.marthastewart.com/styles/wmax-200/d27/ea101006_1104_l_salmon_brus/ea101006_1104_l_salmon_brus_vert.jpg?itok=jJMSEi9T
+        </image>
+        <description>
+              1. Preheat oven to 450 degrees. On a rimmed baking sheet, toss brussels sprouts with olive oil. Season with 1/2 teaspoon coarse salt and 1/4 teaspoon ground pepper. Spread in a single layer. Roast, tossing occasionally, until sprouts are browned, 10 to 15 minutes.+2. Season salmon fillets with salt and pepper. Place in center of baking sheet (push sprouts to sides). Roast until salmon is opaque throughout and sprouts are tender, about 10 minutes.
+        </description>
+    </dish>
+    <dish>
+        <type> Lunch </type>
+        <title> Porchetta-Style Pork </title>
+        <duration> 65 minutes </duration>
+        <calories> 350 calories </calories>
+        <ingredients>
+             1 pound Brussels sprouts trimmed and halved, Coarse salt and ground pepper, 2 tablespoons olive oil, 4 skinless salmon fillets
+        </ingredients>
+        <image> https://assets.marthastewart.com/styles/wmax-750/d36/porchetta-style-roast-pork-102817875/porchetta-style-roast-pork-102817875_horiz.jpg?itok=oKFLSVug
+        </image>
+        <description>
+             1. Preheat oven to 425 degrees with rack in center. In a food processor, combine garlic, fennel seeds, rosemary, lemon zest, 1 1/2 teaspoons salt, and 3 tablespoons oil; pulse to a paste. Pat pork dry. On a rimmed baking sheet, rub pork all over with garlic mixture and wrap with pancetta, overlapping slightly; secure with twine at 2-inch intervals.+2. Toss potatoes, onion, and lemon slices with remaining 3 tablespoons oil. Season with salt and pepper; scatter around pork. Drizzle with 1/3 cup water; roast, basting with juices, until pancetta is crisp and a thermometer inserted in thickest part of meat registers 138 degrees, 40 minutes. Transfer to a cutting board; tent with foil.+3. Return sheet to oven and continue to roast vegetables, tossing once, 10 minutes more. Remove strings from pork and slice. Serve, alongside vegetables, and drizzled with pan juices.
+        </description>
+    </dish>
+    <dish>
+        <type> Lunch </type>
+        <title> Braised Chicken With Potatoes, Olives and Lemon </title>
+        <duration> 65 minutes </duration>
+        <calories> 350 calories </calories>
+        <ingredients>
+            2 1/4 pounds bone-in skin-on chicken thighs, 1 tablespoon extra-virgin olive oil, 12 ounces baby fingerling potatoes, 1/2 cup green olive, 6 thyme sprigs, Coarse salt, 1 1/4 cups chicken stock, 5 garlic cloves smashed and peeled, 1 small lemon, 1 teaspoon cornstarch,
+        </ingredients>
+        <image> https://assets.marthastewart.com/styles/wmax-300/d45/skillet-chicken-potatoes-olives-0911mld107571/skillet-chicken-potatoes-olives-0911mld107571_vert.jpg?itok=34l_Reez
+        </image>
+        <description>
+            1. Preheat oven to 450 degrees. Season chicken with salt. Heat a large, heavy ovenproof skillet (preferably cast iron) over medium-high heat. Swirl in oil. Cook chicken, skin side down, until browned, about 5 minutes. Flip chicken, and push to side of skillet. Add 1 cup stock and 1/2 teaspoon salt. Add potatoes to liquid. Bring to a boil. Add garlic, olives, lemon wedges, and thyme to liquid. Return to a boil.+2. Transfer skillet to oven. Roast, stirring potatoes halfway through, until potatoes are tender and chicken is cooked through, about 30 minutes.+3. Return skillet to stove. Mix cornstarch with remaining 1/4 cup stock, and stir into pan. Bring to a boil to thicken sauce. Serve immediately.
         </description>
     </dish>
 
+    
 </recipes>
 

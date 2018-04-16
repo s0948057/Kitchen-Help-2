@@ -8,14 +8,14 @@
 
 import Foundation
 
-struct Recipes {
+struct Recipe {
     var title = ""
     var type = ""
     var image = ""
     var duration = ""
     var calories = ""
     var ingredients = ""
+    var items = ""
     var description = ""
 }
-
 
