@@ -114,15 +114,13 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
-        let data = recipeTitle
-        
         if searchBar.text == nil || searchBar.text == "" {
             isSearching = false
             view.endEditing(true)
             myTableView.reloadData()
         } else {
             isSearching = true
-            filteredData = tableViewDataSource.filter({$0.title == searchBar.text})
+            filteredData = tableViewDataSource.filter({$0.title.range(of: searchBar.text!) != nil})
             myTableView.reloadData()
         }
         
