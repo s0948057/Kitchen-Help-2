@@ -122,8 +122,8 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
             myTableView.reloadData()
         } else {
             isSearching = true
-            //filteredData = data.filter({$0 == searchBar.text})
-            
+            filteredData = tableViewDataSource.filter({$0.title == searchBar.text})
+            myTableView.reloadData()
         }
         
     }
