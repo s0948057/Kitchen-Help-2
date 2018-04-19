@@ -80,6 +80,20 @@
               1.Beat eggs and water in small bowl until blended.+2. Microwave butter in 9-inch glass pie plate on high until melted, about 15 seconds. Tilt plate to boat bottom evenly. Pour egg mixture into hot pie plate. Cover tightly with plastic wrap, leaving a small vent.+3. Microwave on high 1 to 2 minutes. DO NOT STIR.+4. When top is thickened and no visible liquid egg remains, season with salt and pepper if desired. Place half of the cheese on one half of the omlet. Fold omelet in half with turner, sprinkle with remaining cheese melts. Slide from pie plate onto serving plate. Serve immediately with salsa.
         </description>
     </dish>
+    <dish>
+        <type> breakfast </type>
+        <title> Sauteed Potatoes with Chorizo</title>
+        <duration> 35 minutes </duration>
+        <calories> 350 calories </calories>
+        <ingredients>
+            1 tablespoon vegetable oil, 10 ounces Mexican pork chorizo, 1 small onion, diced, 1 pound red skinned potatoes, 1 pound red skinned potatoes, Salt, Fresh pepper
+        </ingredients>
+        <image>https://food.fnr.sndimg.com/content/dam/images/food/fullset/2010/4/5/0/VM0104_Sauteed-Potatoes-with-Chorizo_s4x3.jpg.rend.hgtvcom.616.462.suffix/1371591505280.jpeg </image>
+        <description>
+             1. Heat the oil in a heavy large skillet over medium-high heat. Add the chorizo and cook, breaking up the clumps, until dry and crisp, about 10 minutes. Using a slotted spoon, transfer the chorizo to a paper lined plate to absorb any additional oil.+2. Pour off all but 1 tablespoon of fat from the pan and heat the pan over medium-high heat. Add the onions and boiled potatoes and saute until brown, about 12 minutes.+3. Stir in the cooked chorizo and season with just a little salt and pepper, to taste. Transfer to a serving bowl and serve.
+        </description>
+    </dish>
+
     
     <dish>
         <type> Lunch </type>
@@ -221,7 +235,28 @@
              1. Heat a large stockpot over medium heat and add oil. Add onion, ginger, and garlic. Cook, stirring frequently until onions are soft and translucent, about 10 minutes. Add cumin and stir for 30 seconds. Add chickpeas, lemon, tomatoes, and cinnamon; cook until tomatoes soften slightly, about 3 minutes.+2. Season chicken with 1 1/2 teaspoons salt and 1/2 teaspoon pepper; add to pot. Add 1 1/2 cups water, nestling chicken into liquid. Bring to a boil. Reduce to a gentle simmer and cook, partially covered, until chicken is cooked through, about 40 minutes. Remove chicken.+3. Continue cooking over high heat to reduce slightly if necessary, crushing some chickpeas to thicken. Stir in cilantro. Taste and adjust for seasoning. Spoon chickpeas and liquid into serving bowls, top with chicken. Sprinkle with cilantro and serve with lemon.
         </description>
     </dish>
-
+    <dish>
+        <type> Dinner </type>
+        <title>  Skinny Alfredo pasta </title>
+        <duration> minutes </duration>
+        <calories> 350 calories </calories>
+        <ingredients>
+             12 oz. whole-wheat linguine,
+             1 tbsp. Extra virgin olive oil,
+             3 cloves garlic, minced,
+             3 tbsp. All purpose flour,
+             1 c. chicken broth,
+            ¾ c. skim milk,
+             ½ c. freshly grated Parmesan,
+             Grounded black pepper,
+            Dried or fresh parsley, for garnish,
+        </ingredients>
+        <image> https://hips.hearstapps.com/clv.h-cdn.co/assets/17/36/480x721/gallery-1504812526-landscape-1452811206-skinny-alfredo-delish.jpg?resize=*:2637
+        </image>
+        <description>
+             1. In a large pot of salted boiling water, cook linguine according to package directions. Drain and return to pot.+2. Meanwhile, in a large skillet over medium heat, heat olive oil. Add garlic and cook until fragrant, 1 minute. Add flour and stir until golden, then pour in chicken broth and milk. Whisk to combine and add Parmesan, then let cook until thickened. 4 to 5 minutes. Season with pepper.+3. Add linguine to skillet and toss until fully coated. Garnish with parsley and serve.
+        </description>
+    </dish>
     
 </recipes>
 
