@@ -215,9 +215,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="ZKQ-DJ-yiP">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" rowHeight="107" id="dSz-dw-gs1" customClass="RecipeTableViewCell" customModule="Kitchen_Help" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="107"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="107"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dSz-dw-gs1" id="aQY-Kb-SQn">
                                     <rect key="frame" x="0.0" y="0.0" width="341" height="106.5"/>
@@ -286,6 +291,7 @@
                     <navigationItem key="navigationItem" title="Recipes" id="kfi-nh-vfh"/>
                     <connections>
                         <outlet property="myTableView" destination="dnZ-i9-0tj" id="8Ru-7Z-z5B"/>
+                        <outlet property="searchBar" destination="ZKQ-DJ-yiP" id="lwl-Zl-yBN"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TZE-jq-KQt" userLabel="First Responder" sceneMemberID="firstResponder"/>

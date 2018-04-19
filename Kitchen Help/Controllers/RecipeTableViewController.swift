@@ -8,11 +8,13 @@
 
 import UIKit
 
-class RecipeTableViewController: UITableViewController, XMLParserDelegate {
+class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISearchBarDelegate {
     
     @IBOutlet var myTableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     var tableViewDataSource = [Recipe]()
+    var filteredData = [Recipe]()
     
     var thisName = ""
     var recipeTitle = ""
@@ -21,6 +23,8 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
     var recipeDescription = ""
     var recipeIngredients = ""
     var recipeImage = ""
+    
+    var isSearching = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,12 +38,20 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
                 parser.parse()
             }
         }
+        
+        myTableView.rowHeight = UITableViewAutomaticDimension
+        myTableView.estimatedRowHeight = 107
+        
+        searchBar.delegate = self
+        searchBar.returnKeyType = UIReturnKeyType.done
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
+    
     
     // Table View Delegates
     
@@ -49,14 +61,25 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print(tableViewDataSource.count)
+        
+        if isSearching {
+            return filteredData.count
+        }
+        
+        
         return tableViewDataSource.count
+        
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RecipeTableViewCell
         
         if let item = tableViewDataSource[indexPath.item] as? Recipe {
-            cell.item = item
+            if isSearching {
+                cell.item = filteredData[indexPath.row]
+            } else {
+                cell.item = item
+            }
         }
         
         cell.recipeImage.downloadImage(from: (self.tableViewDataSource[indexPath.item].image)) /****/
@@ -76,13 +99,35 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
         resultsVC.getDirections = tableViewDataSource[indexPath.row].description
         resultsVC.getCalories = tableViewDataSource[indexPath.row].calories
         
+        //resultsVC.getImage = tableViewDataSource[indexPath.row].image
+        
         // Code to push image
         
         // Push to next view
         self.navigationController?.pushViewController(resultsVC, animated: true)
         
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 107
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
+        let data = recipeTitle
+        
+        if searchBar.text == nil || searchBar.text == "" {
+            isSearching = false
+            view.endEditing(true)
+            myTableView.reloadData()
+        } else {
+            isSearching = true
+            //filteredData = data.filter({$0 == searchBar.text})
+            
+        }
+        
+    }
+    
     // XML Parsing
     
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
@@ -134,6 +179,7 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
             tableViewDataSource.append(recipe)
         }
     }
+    
 }
 
 extension UIImageView {
