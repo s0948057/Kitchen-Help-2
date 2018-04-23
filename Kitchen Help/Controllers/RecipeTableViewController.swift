@@ -115,7 +115,6 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
         
         // Push to next view
         self.navigationController?.pushViewController(resultsVC, animated: true)
-        
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
