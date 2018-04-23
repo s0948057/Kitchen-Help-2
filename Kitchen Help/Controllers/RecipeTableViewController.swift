@@ -53,7 +53,7 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
     }
     
     
-    // Table View Delegates
+    // Table View Delegates ================================
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -66,7 +66,6 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
             return filteredData.count
         }
         
-        
         return tableViewDataSource.count
         
     }
@@ -77,13 +76,13 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
         if let item = tableViewDataSource[indexPath.item] as? Recipe {
             if isSearching {
                 cell.item = filteredData[indexPath.row]
+                cell.recipeImage.downloadImage(from: (self.filteredData[indexPath.item].image))
             } else {
                 cell.item = item
+                cell.recipeImage.downloadImage(from: (self.tableViewDataSource[indexPath.item].image))
             }
         }
         
-        cell.recipeImage.downloadImage(from: (self.tableViewDataSource[indexPath.item].image)) /****/
- 
         return cell
     }
     
@@ -93,15 +92,24 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
         
         // Information to be passed to ResultsViewController
         
-        resultsVC.getTitle = tableViewDataSource[indexPath.row].title
-        resultsVC.getDuration = tableViewDataSource[indexPath.row].duration
-        resultsVC.getIngredients = tableViewDataSource[indexPath.row].ingredients
-        resultsVC.getDirections = tableViewDataSource[indexPath.row].description
-        resultsVC.getCalories = tableViewDataSource[indexPath.row].calories
         
-        //resultsVC.getImage = tableViewDataSource[indexPath.row].image
-        
-        // Code to push image
+        if (tableViewDataSource[indexPath.item] as? Recipe) != nil {
+            if isSearching {
+                resultsVC.getTitle = filteredData[indexPath.row].title
+                resultsVC.getDuration = filteredData[indexPath.row].duration
+                resultsVC.getIngredients = filteredData[indexPath.row].ingredients
+                resultsVC.getDirections = filteredData[indexPath.row].description
+                resultsVC.getCalories = filteredData[indexPath.row].calories
+            } else {
+                resultsVC.getTitle = tableViewDataSource[indexPath.row].title
+                resultsVC.getDuration = tableViewDataSource[indexPath.row].duration
+                resultsVC.getIngredients = tableViewDataSource[indexPath.row].ingredients
+                resultsVC.getDirections = tableViewDataSource[indexPath.row].description
+                resultsVC.getCalories = tableViewDataSource[indexPath.row].calories
+                // Parse images
+                //resultsVC.getImage = tableViewDataSource[indexPath.row].image
+            }
+        }
         
         // Push to next view
         self.navigationController?.pushViewController(resultsVC, animated: true)
@@ -126,7 +134,7 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
         
     }
     
-    // XML Parsing
+    // XML Parsing ================================
     
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
         thisName = elementName
