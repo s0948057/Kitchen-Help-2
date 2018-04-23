@@ -18,6 +18,7 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
     
     var thisName = ""
     var recipeTitle = ""
+    var recipeType = ""
     var recipeDuration = ""
     var recipeCalories = ""
     var recipeDescription = ""
@@ -92,14 +93,15 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
         
         // Information to be passed to ResultsViewController
         
-        
-        if (tableViewDataSource[indexPath.item] as? Recipe) != nil {
+        if (tableViewDataSource[indexPath.item] as? Recipe) != nil  {
             if isSearching {
+                
                 resultsVC.getTitle = filteredData[indexPath.row].title
                 resultsVC.getDuration = filteredData[indexPath.row].duration
                 resultsVC.getIngredients = filteredData[indexPath.row].ingredients
                 resultsVC.getDirections = filteredData[indexPath.row].description
                 resultsVC.getCalories = filteredData[indexPath.row].calories
+                //resultsVC.imageDisplay.downloadImage(from: (self.filteredData[indexPath.row].image))
             } else {
                 resultsVC.getTitle = tableViewDataSource[indexPath.row].title
                 resultsVC.getDuration = tableViewDataSource[indexPath.row].duration
@@ -107,7 +109,7 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
                 resultsVC.getDirections = tableViewDataSource[indexPath.row].description
                 resultsVC.getCalories = tableViewDataSource[indexPath.row].calories
                 // Parse images
-                //resultsVC.getImage = tableViewDataSource[indexPath.row].image
+                //resultsVC.imageDisplay.downloadImage(from: (self.tableViewDataSource[indexPath.row].image))
             }
         }
         
@@ -120,6 +122,8 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
         return 107
     }
     
+    // Search Bar =================================
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
         if searchBar.text == nil || searchBar.text == "" {
@@ -128,7 +132,7 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
             myTableView.reloadData()
         } else {
             isSearching = true
-            filteredData = tableViewDataSource.filter({$0.title.range(of: searchBar.text!) != nil})
+            filteredData = tableViewDataSource.filter({($0.title.range(of: searchBar.text!) != nil) || $0.type.range(of: searchBar.text!) != nil})
             myTableView.reloadData()
         }
         
@@ -141,6 +145,7 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
         
         if elementName == "dish" {
             var recipeTitle = ""
+            var recipeType = ""
             var recipeDuration = ""
             var recipeCalories = ""
             var recipeIngredients = ""
@@ -156,6 +161,7 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
             switch thisName
             {
             case "title": recipeTitle = data
+            case "type": recipeType = data
             case "duration": recipeDuration = data
             case "calories": recipeCalories = data
             case "image": recipeImage = data
@@ -175,6 +181,7 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
         if elementName == "dish" {
             var recipe = Recipe()
             recipe.title = recipeTitle
+            recipe.type = recipeType
             recipe.duration = recipeDuration
             recipe.calories = recipeCalories
             recipe.ingredients = recipeIngredients
