@@ -15,7 +15,7 @@ class ResultsViewController: UIViewController {
     var getIngredients = String()
     var getDirections = String()
     var getCalories = String()
-    var getImage = UIImage()
+    var getImage = String()
     
     @IBOutlet weak var recipeDisplay: UILabel!
     @IBOutlet weak var durationDisplay: UILabel!
@@ -32,7 +32,7 @@ class ResultsViewController: UIViewController {
         ingredientsDisplay.text! = getIngredients
         directionsDisplay.text! = getDirections
         caloriesDisplay.text! = getCalories
-        //imageDisplay.image! = getImage
+        imageDisplay.downloadImage(from: getImage)
         
         // Do any additional setup after loading the view.
     }

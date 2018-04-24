@@ -15,7 +15,6 @@ struct Recipe {
     var duration = ""
     var calories = ""
     var ingredients = ""
-    var items = ""
     var description = ""
 }
 

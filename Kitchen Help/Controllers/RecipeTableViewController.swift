@@ -94,14 +94,14 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
         // Information to be passed to ResultsViewController
         
         if (tableViewDataSource[indexPath.item] as? Recipe) != nil  {
+            
             if isSearching {
-                
                 resultsVC.getTitle = filteredData[indexPath.row].title
                 resultsVC.getDuration = filteredData[indexPath.row].duration
                 resultsVC.getIngredients = filteredData[indexPath.row].ingredients
                 resultsVC.getDirections = filteredData[indexPath.row].description
                 resultsVC.getCalories = filteredData[indexPath.row].calories
-                //resultsVC.imageDisplay.downloadImage(from: (self.filteredData[indexPath.row].image))
+                resultsVC.getImage = filteredData[indexPath.item].image
             } else {
                 resultsVC.getTitle = tableViewDataSource[indexPath.row].title
                 resultsVC.getDuration = tableViewDataSource[indexPath.row].duration
@@ -109,7 +109,7 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
                 resultsVC.getDirections = tableViewDataSource[indexPath.row].description
                 resultsVC.getCalories = tableViewDataSource[indexPath.row].calories
                 // Parse images
-                //resultsVC.imageDisplay.downloadImage(from: (self.tableViewDataSource[indexPath.row].image))
+                resultsVC.getImage = tableViewDataSource[indexPath.item].image
             }
         }
         
@@ -197,13 +197,13 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
 extension UIImageView {
     func downloadImage(from url: String) {
         let urlRequest = URLRequest(url: URL(string: url)!)
-        let task = URLSession.shared.dataTask(with: urlRequest) { (data,response,error) in
+        let task = URLSession.shared.dataTask(with: urlRequest) { [weak self] (data,response,error) in
             if error != nil {
                 print(error!)
                 return
             }
             DispatchQueue.main.sync {
-                self.image = UIImage(data: data!)
+                self?.image = UIImage(data: data!)
             }
         }
         task.resume()
