@@ -2,7 +2,7 @@
 
 <recipes>
     <dish>
-        <type> breakfast </type>
+        <type> Breakfast </type>
         <title> Whole Grain Waffles</title>
         <duration> 15 minutes </duration>
         <calories> 350 calories </calories>
@@ -15,7 +15,21 @@
         </description>
     </dish>
     <dish>
-        <type> breakfast </type>
+        <type> Breakfast </type>
+        <title> Classic Hash Browns </title>
+        <duration> 30 minutes </duration>
+        <calories> 250 calories </calories>
+        <ingredients>
+            2 russet potatoes, 3 tablespoons clarified butter, salt and ground black pepper to taste, 1 pinch cayenne pepper or to taste, 1 pinch paprika or to taste
+        </ingredients>
+        <image>https://images.media-allrecipes.com/userphotos/250x250/801447.jpg
+        </image>
+        <description>
+            1. Shred potatoes into a large bowl filled with cold water. Stir until water is cloudy, drain, and cover potatoes again with fresh cold water. Stir again to dissolve excess starch. Drain potatoes well, pat dry with paper towels, and squeeze out any excess moisture.+2. Heat clarified butter in a large non-stick pan over medium heat. Sprinkle shredded potatoes into the hot butter and season with salt, black pepper, cayenne pepper, and paprika.+3. Cook potatoes until a brown crust forms on the bottom, about 5 minutes. Continue to cook and stir until potatoes are browned all over, about 5 more minutes.
+        </description>
+    </dish>
+    <dish>
+        <type> Breakfast </type>
         <title> Whole Wheat Sweet Potato Muffins </title>
         <duration> 40 minutes </duration>
         <calories> 350 calories </calories>
@@ -29,12 +43,12 @@
         </description>
     </dish>
     <dish>
-        <type> breakfast </type>
+        <type> Breakfast </type>
         <title> Maple Apple Turkey Sausage </title>
         <duration> 16 minutes </duration>
         <calories> 350 calories </calories>
         <ingredients>
-              1 pound lean ground turkey, 1 small apple peeled and finely chopped, 1 tablespoon pure maple syrup, 3/4 teaspoon salt, 1/2 teaspoon dried sage, 1/4 teaspoon garlic powder, 1/4 teaspoon ground black pepper, 1/4 teaspoon dried marjoram, 1/8 teaspoon ground cinnamon, 1 dash ground cloves, 1 tablespoon olive oil,
+              1 pound lean ground turkey, 1 small apple peeled and finely chopped, 1 tablespoon pure maple syrup, 3/4 teaspoon salt, 1/2 teaspoon dried sage, 1/4 teaspoon garlic powder, 1/4 teaspoon ground black pepper, 1/4 teaspoon dried marjoram, 1/8 teaspoon ground cinnamon, 1 dash ground cloves, 1 tablespoon olive oil
         </ingredients>
         <image> https://images.media-allrecipes.com/userphotos/560x315/4553597.jpg
         </image>
@@ -43,9 +57,9 @@
         </description>
     </dish>
     <dish>
-        <type> breakfast </type>
+        <type> Breakfast </type>
         <title> Healthy Blueberry Breakfast Smoothie </title>
-        <duration> 15minutes </duration>
+        <duration> 15 minutes </duration>
         <calories> 350 calories </calories>
         <ingredients>
               1 pound lean ground turkey, 1 cup fresh blueberries, 1/2 cup Greek yogurt, 1/4 cup orange juice, 1 tablespoon white sugar or to taste, 1/4 teaspoon vanilla extract, 1 pinch ground cinnamon or to taste, 3 ice cubes
@@ -55,7 +69,7 @@
           Blend blueberries, yogurt, orange juice, sugar, vanilla extract, and cinnamon together in a blender on low speed for 30 seconds; increase speed to high and blend until smooth, about 2 minutes. Add ice and blend on high until smooth, about 1 minute more. </description>
     </dish>
     <dish>
-        <type> breakfast </type>
+        <type> Breakfast </type>
         <title> Apple Raisin French Toast Strata </title>
         <duration> 65 minutes </duration>
         <calories> 350 calories </calories>
@@ -68,7 +82,7 @@
         </description>
     </dish>
     <dish>
-        <type> breakfast </type>
+        <type> Breakfast </type>
         <title> Microwave Mexican Omelet </title>
         <duration> 3 minutes </duration>
         <calories> 400 calories </calories>
@@ -81,7 +95,7 @@
         </description>
     </dish>
     <dish>
-        <type> breakfast </type>
+        <type> Breakfast </type>
         <title> Sauteed Potatoes with Chorizo</title>
         <duration> 35 minutes </duration>
         <calories> 350 calories </calories>
@@ -93,8 +107,23 @@
              1. Heat the oil in a heavy large skillet over medium-high heat. Add the chorizo and cook, breaking up the clumps, until dry and crisp, about 10 minutes. Using a slotted spoon, transfer the chorizo to a paper lined plate to absorb any additional oil.+2. Pour off all but 1 tablespoon of fat from the pan and heat the pan over medium-high heat. Add the onions and boiled potatoes and saute until brown, about 12 minutes.+3. Stir in the cooked chorizo and season with just a little salt and pepper, to taste. Transfer to a serving bowl and serve.
         </description>
     </dish>
+    <dish>
+        <type> Breakfast </type>
+        <title>Tofu Scramble</title>
+        <duration> 10 minutes </duration>
+        <calories>  100 calories </calories>
+        <ingredients>
+             1 teaspoon nutritional yeast, 1/4 teaspoon turmeric, 1/4 teaspoon paprika, 1 tablespoon water, Pinch sea salt, 1/8 teaspoon black pepper, 1 scallion,  1 clove garlic, 1/2 package firm tofu,  1 tablespoon very finely chopped parsley, 1 tablespoon olive oil
+        </ingredients>
+        <image>https://greatist.com/sites/default/files/styles/article-header-1140x450/public/Scrambled-Tofu_AS_.jpg?itok=Sgcn_Hrt</image>
+        <description>
+            1. In a small bowl, mix together nutritional yeast, turmeric, cumin, paprika, water, salt, and pepper. Set aside.+2. Coat a frying pan with olive oil and place it over medium heat. Once hot, add scallion and garlic, and saute until fragrant, about 2 minutes.+3. Crumble tofu into the pan, breaking it up with your fingers. Pour seasoning over tofu and mix well, trying to color as much tofu as possible. Cook for 2 minutes or until tofu is hot throughout.+4. Toss in parsley and continue to stir for another 1 to 2 minutes.+
+            Once cooked, serve with favorite sides and toppings, such as sliced avocado, whole-grain crackers or toast, sliced tomato, bacon (regular or meat-free), salsa, and/or hot sauce.
+        </description>
+    </dish>
 
-    
+
+
     <dish>
         <type> Lunch </type>
         <title> Baked potato poblanos and sour cream </title>
@@ -122,6 +151,19 @@
         <description>
               1. Preheat oven to 400 degrees with racks in upper and lower thirds. Prick potatoes all over with a fork. Rub with 2 tablespoons oil; season with kosher salt. Place directly on top rack, with a parchment-lined rimmed baking sheet on rack below. Roast 45 minutes.+2. Meanwhile, toss broccoli rabe with remaining 1 tablespoon oil; season with kosher salt and pepper. Carefully remove parchment from lower baking sheet; add broccoli rabe in a single layer. Roast, tossing once, until tender and bright green and potatoes are soft and oozing, 15 minutes. Transfer vegetables to a cutting board; let cool slightly, then chop broccoli rabe into bite-size pieces. Split sweet potatoes open; mash lightly with a fork. Top with broccoli rabe, beans, and pepperoncini. Serve, drizzled with oil and brine and sprinkled with flaky salt.
         </description> 
+    </dish>
+    <dish>
+        <type> Lunch </type>
+        <title>Penne with Vodka Cream Sauce </title>
+        <duration> 35 minutes </duration>
+        <calories> 250 calories </calories>
+        <ingredients>
+            2 tablespoons vegan butter, 1/2 small white onion, 2-3 cloves garlic, 14 oz can diced tomatoes, 1/4 cup raw cashews, 1/2 cup water, 1/4 cup good-quality vodka, pinch of crushed red pepper flakes, salt and pepper, 1/2 lb penne pasta, fresh basil
+        </ingredients>
+        <image>https://www.mydarlingvegan.com/wp-content/uploads/2017/02/penne-pasta4-768x1170.jpg</image>
+        <description>
+             1. Cook penne pasta according to packaged directions until al dente. Drain and set aside.+2. Drain and rinse the cashews. Combine cashews with 1/2 cup water in a high-powered blender like a VitaMix. Blend until completely smooth. Set aside.+3. While pasta is cooking, heat butter in a large pot. Add onions and garlic and sauté for 5-7 minutes over medium heat until onions are translucent and fragrant.+4. Add tomatoes, cashew cream, and vodka and cook for another 7 minutes at a low simmer, stirring occasionally. Flavor with salt, pepper, and red pepper flakes.+5. Stir in cooked penne pasta. Serve with vegan parmesan and fresh basil.
+        </description>
     </dish>
     <dish>
         <type> Lunch </type>
@@ -166,6 +208,36 @@
         </description>
     </dish>
     <dish>
+        <type> Lunch </type>
+        <title>Chicken Quesadillas </title>
+        <duration> 35 minutes </duration>
+        <calories> 250 calories </calories>
+        <ingredients>
+            12 large flour tortillas, 2 tablespoons olive oil, 2 1/2 cups grated cheese, 2 pounds skinless chicken breasts, Pico de Gallo, 2 tablespoons taco or Cajun seasoning mix, 1 large onion, 1 green bell pepper, 1 red bell pepper, 1 yellow bell pepper, 12 tablespoons butter, 12 Roma tomatoes (slightly under ripe is fine), 3 yellow or red onions, 2 cups fresh cilantro leaves, 2 to 3 jalapenos, 1 lime, salt
+        </ingredients>
+        <image>https://www.onceuponachef.com/images/2014/02/Chipotle-Chicken-Quesadillas1-575x359.jpg
+        </image>
+        <description>
+             1. Preheat oven to 400 degrees F.+2. Find a baking dish that will fit both mushroom caps. Add all other ingredients and stir to create marinade. Add mushrooms and rub sauce onto them. Let sit for 15 minutes, stem side down.+3. Once 15 minutes is up, rub mushrooms again with sauce before placing dish in the oven.+4. Add tomatoes, cashew cream, and vodka and cook for another 7 minutes at a low simmer, stirring occasionally. Flavor with salt, pepper, and red pepper flakes.+5. Bake for 15 minutes. Remove and turn mushrooms over. If there is any sauce left in the pan, spoon it over the mushrooms. Continue baking another 15 minutes. Remove and let sit for 5 minutes before slicing and serving.
+        </description>
+    </dish>
+    <dish>
+        <type> Lunch </type>
+        <title>Grilled Chicken Sandwich </title>
+        <duration> 35 minutes </duration>
+        <calories> 250 calories </calories>
+        <ingredients>
+            2 lbs. boneless, skinless chicken breasts, 1 tablespoon garlic powder, 1 tablespoon dried oregano, 1 1/2 tsp. salt, 1/2 tsp. black pepper, 1/2 tsp. crushed red pepper flakes, 2 tsp. honey, 6 tablespoons red wine vinegar, 6 tablespoons olive oil, Sandwich buns, Lettuce leaves, Sliced tomatoes
+        </ingredients>
+        <image>https://thefamilydinnerproject.org/wp-content/uploads/2014/07/Easy-grilled-chicken-sandwich-768x396.jpg
+        </image>
+        <description>
+            1. Whisk the ingredients for the marinade in a medium bowl until thoroughly combined.+2. Pour over the chicken and toss to coat.+3. Cover and refrigerate for a minimum of 2 hours, and up to 8 hours.+4. Grill the chicken breasts over medium heat for 12-14 minutes, just until cooked through.+5. Allow the chicken to rest for 5-10 minutes before making the sandwiches.+6. Pile a few lettuce leaves, several slices of tomato, and a piece of chicken onto a lightly toasted bun. Add condiments if you wish.
+        </description>
+    </dish>
+
+    
+    <dish>
         <type> Dinner </type>
         <title> Baked Eggplants Parmesan </title>
         <duration> 65 minutes </duration>
@@ -191,6 +263,35 @@
         </image>
         <description>
              1. Heat 2 tablespoons oil in a 5-quart Dutch oven over medium-high. Generously season beef with salt and pepper. Working in two batches, sear beef, flipping once, until deep golden brown, 3 to 4 minutes per side. Transfer to a bowl.+2. Remove fat from Dutch oven; add remaining 1 tablespoon oil. Stir in onion, celery, and garlic; cook, stirring occasionally, until softened, 6 to 8 minutes. Add tomato paste and flour and cook, stirring, 1 minute. Add Worcestershire and wine and cook, scraping up browned bits from bottom, 1 minute. Add broth and bay leaves.+3. Cut beef into 1 1/2-inch chunks; return to Dutch oven along with any juices. Bring to a boil, then partially cover and reduce heat to a simmer. Cook until meat is tender, about 1 1/2 hours. Add potatoes, carrots, and turnip, re-cover partially, and continue to cook until vegetables are tender, about 1 hour, 15 minutes. Season with salt and pepper.+4. Combine parsley and horseradish in a small bowl. Serve stew with dollops of sour cream, topped with parsley-horseradish mixture.
+        </description>
+    </dish>
+    <dish>
+        <type> Dinner </type>
+        <title> Baked Portobello Mushrooms </title>
+        <duration> 35 minutes </duration>
+        <calories> 250 calories </calories>
+        <ingredients>
+            2 portobello mushrooms, 2 Tbsp. soy sauce (use tamari if needed to be gluten free), 1 Tbsp. balsamic vinegar, ½ tsp. minced garlic, ¼ tsp. minced or grated ginger root, ½ Tbsp. olive oil
+        </ingredients>
+        <image>https://feastingnotfasting.com/wp-content/uploads/2015/10/Baked-Portobello-Mushrooms-THE-Best-1041-600x840.jpg
+        </image>
+        <description>
+            1. Preheat oven to 400 degrees F.+2. Find a baking dish that will fit both mushroom caps. Add all other ingredients and stir to create marinade. Add mushrooms and rub sauce onto them. Let sit for 15 minutes, stem side down.+3. Once 15 minutes is up, rub mushrooms again with sauce before placing dish in the oven.+4. Add tomatoes, cashew cream, and vodka and cook for another 7 minutes at a low simmer, stirring occasionally. Flavor with salt, pepper, and red pepper flakes.+5. Bake for 15 minutes. Remove and turn mushrooms over. If there is any sauce left in the pan, spoon it over the mushrooms. Continue baking another 15 minutes. Remove and let sit for 5 minutes before slicing and serving.
+        </description>
+    </dish>
+    <dish>
+        <type> Dinner </type>
+        <title> Lemon Pepper Chicken </title>
+        <duration> 30minutes </duration>
+        <calories> 250 calories </calories>
+        <ingredients>
+             1 lb. Boneless Skinless Chicken Breast, 1/2 c. all-purpose flour, 1 tbsp. lemon pepper seasoning, 1 tsp. kosher salt, 2 lemons, 2 tbsp. extra-virgin olive oil, 1/2 c. low-sodium chicken broth, 2 tbsp. butter, 2 cloves garlic, Chopped parsley
+        </ingredients>
+        <image>https://hips.hearstapps.com/del.h-cdn.co/assets/17/35/2048x1365/gallery-1504195270-lemon-pepper-chicken.jpg?resize=980:*
+        </image>
+        <description>
+            1. Preheat oven to 400°+2. In a medium bowl, combine flour, lemon pepper, salt, and zest of one lemon. Toss halved chicken breasts in the flour mixture until fully coated. Slice 1 lemon into thin rounds.+3. In a large skillet over medium high heat, heat olive oil. Add the chicken in a single layer and cook until golden on the bottom, about 5 minutes. Flip chicken breasts.+4. To the same skillet, add the chicken broth, butter, garlic and lemon slices and transfer skillet to the oven. Bake until the chicken reaches an internal temperature of 170° F and the sauce has reduced slightly, 10 to 15 minutes.+5. Spoon sauce on top of chicken. Garnish with parsley.
+            
         </description>
     </dish>
     <dish>
